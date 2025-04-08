@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spam Detector</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>🚀 SMS Spam Detector</h2>
+        <p>Enter a message below to check if it’s spam or ham.</p>
+        <textarea id="message" placeholder="Type your message here..."></textarea>
+        <button onclick="checkSpam()">🔍 Check</button>
+        <div class="loader" id="loader"></div>
+        <h3 class="result" id="result"></h3>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
